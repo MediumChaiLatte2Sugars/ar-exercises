@@ -7,4 +7,5 @@ require_relative './exercise_4'
 puts "Exercise 5"
 puts "----------"
 
-# Your code goes here ...
+# Output total company revenue
+puts Store.sum(:annual_revenue)
