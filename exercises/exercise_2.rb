@@ -4,4 +4,8 @@ require_relative './exercise_1'
 puts "Exercise 2"
 puts "----------"
 
-# Your code goes here ...
+# Load and assign first store to variable
+@store1 = Store.first
+
+# Load and assign second store to variable
+@store2 = Store.find_by(id: 2)
