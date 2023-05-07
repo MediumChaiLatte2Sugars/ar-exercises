@@ -13,3 +13,8 @@ Store.create(name: 'Yaletown', annual_revenue: 430000, mens_apparel: true, women
 
 # Fetch stores carrying men's apparel 
 @mens_stores = Store.where(mens_apparel: true, womens_apparel: false)
+
+# Loop and print store name and annual revenue
+@mens_stores.each do |store|
+  puts "Name: #{store.name}, Annual Revenue: #{store.annual_revenue}"
+end
