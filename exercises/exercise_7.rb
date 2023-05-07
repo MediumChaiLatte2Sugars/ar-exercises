@@ -13,3 +13,10 @@ puts "----------"
 print "Please enter a store name: "
 store_name = gets.chomp
 
+# Create store with given name
+@newStore1 = Store.create(name: store_name)
+
+# Display any returned errors
+if !@newStore1.valid?
+  puts @newStore1.errors.full_messages
+end
