@@ -12,3 +12,6 @@ puts Store.sum(:annual_revenue)
 
 # Output average annual revenue of all stores
 puts Store.sum(:annual_revenue) / Store.count
+
+# Output number of stores generating >= $1M annual revenue
+puts Store.where("annual_revenue >= ?", 1000000).count
