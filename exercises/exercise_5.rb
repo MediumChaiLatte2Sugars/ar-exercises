@@ -9,3 +9,6 @@ puts "----------"
 
 # Output total company revenue
 puts Store.sum(:annual_revenue)
+
+# Output average annual revenue of all stores
+puts Store.sum(:annual_revenue) / Store.count
