@@ -9,4 +9,7 @@ require_relative './exercise_6'
 puts "Exercise 7"
 puts "----------"
 
-# Your code goes here ...
+# Ask user for a store name, assign to variable
+print "Please enter a store name: "
+store_name = gets.chomp
+
